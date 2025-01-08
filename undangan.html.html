@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#couple">Pengantin</a></li>
+            <li><a href="#schedule">Jadwal</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#comments">Komentar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Selamat datang di Undangan Pernikahan Kami</h1>
+        <p>Dengan penuh suka cita kami mengundang Anda untuk hadir di hari spesial kami</p>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown" id="home">
+        <h2>Countdown Menuju Hari Bahagia</h2>
+        <div id="timer" class="timer"></div>
+    </section>
+
+    <!-- Video Kami Section -->
+    <section class="video-section">
+        <h2>Video Kami</h2>
+        <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="subtitle">Jangan lupa untuk menonton video spesial kami sebagai bagian dari perjalanan menuju hari bahagia!</p>
+    </section>
+
+    <!-- Couple Section -->
+    <section class="couple-section" id="couple">
+        <h2>Pengantin Kami</h2>
+        <div class="couple-container">
+            <div class="groom">
+                <img src="groom.jpg" alt="Pengantin Pria" class="hover-zoom">
+                <h3>Nama Pengantin Pria</h3>
+            </div>
+            <div class="bride">
+                <img src="bride.jpg" alt="Pengantin Wanita" class="hover-zoom">
+                <h3>Nama Pengantin Wanita</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section (Tetap di Tengah) -->
+    <section class="schedule-section" id="schedule">
+        <h2>Jadwal Acara</h2>
+        <ul>
+            <li>Akad Nikah: 10:00 AM</li>
+            <li>Resepsi: 1:00 PM</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2>Galeri Foto</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Foto 1" class="gallery-img">
+            <img src="photo2.jpg" alt="Foto 2" class="gallery-img">
+            <img src="photo3.jpg" alt="Foto 3" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="komentar-section" id="comments">
+        <h2>Berikan Komentar</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Nama" required>
+            <textarea placeholder="Komentar" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <div class="modal" id="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" class="modal-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
